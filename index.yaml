@@ -9,6 +9,6 @@ entries:
     name: helm-public
     type: application
     urls:
-    - https://foxyoyo.github.io/helm-public/helm-public-0.1.0.tgz
+    - https://foxyoyo.github.io/helm-abcd/helm-public-0.1.0.tgz
     version: 0.1.0
 generated: "2025-05-03T09:02:31.313359+08:00"
