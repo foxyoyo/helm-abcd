@@ -3,7 +3,7 @@ entries:
   helm-public:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-03T09:02:31.314032+08:00"
+    created: "2025-05-03T09:12:40.152336+08:00"
     description: A Helm chart for Kubernetes
     digest: 7e5dd15d66f2963a101b5e750464da8ca01f5d27131bfbe1aa391070f32dd66a
     name: helm-public
@@ -11,4 +11,4 @@ entries:
     urls:
     - https://foxyoyo.github.io/helm-abcd/helm-public-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-03T09:02:31.313359+08:00"
+generated: "2025-05-03T09:12:40.151696+08:00"
