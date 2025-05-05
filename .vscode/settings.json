@@ -1,0 +1,12 @@
+{
+    "[yaml]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",   // 用 Prettier 或移除
+      "editor.formatOnSave": true
+    },
+    "[helm]": {
+      "editor.formatOnSave": false                             // 禁用 .tpl 格式化
+    },
+    "files.associations": {
+      "*.tpl": "helm"
+    }
+  }

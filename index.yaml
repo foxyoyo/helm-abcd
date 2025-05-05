@@ -3,7 +3,7 @@ entries:
   helm-my-k8s-2:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-03T09:19:38.852691+08:00"
+    created: "2025-05-05T09:46:32.116853+08:00"
     description: A Helm chart for Kubernetes
     digest: a98657291109d8ba74d541cc3fdaace68aae6825c4eae3a02bb447b37fcc4fe5
     name: helm-my-k8s-2
@@ -14,7 +14,7 @@ entries:
   helm-public:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-05-03T09:19:38.853207+08:00"
+    created: "2025-05-05T09:46:32.11738+08:00"
     description: A Helm chart for Kubernetes
     digest: 7e5dd15d66f2963a101b5e750464da8ca01f5d27131bfbe1aa391070f32dd66a
     name: helm-public
@@ -22,4 +22,15 @@ entries:
     urls:
     - https://foxyoyo.github.io/helm-abcd/helm-public-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-03T09:19:38.852358+08:00"
+  my-nginx:
+  - apiVersion: v2
+    appVersion: 1.27.0
+    created: "2025-05-05T09:46:32.117504+08:00"
+    description: A Helm chart for deploying Nginx to Kubernetes
+    digest: 6baca2535827360b96812ba54d3fdb3d6e3255669b640430da9bd4f37f2ecee8
+    name: my-nginx
+    type: application
+    urls:
+    - https://foxyoyo.github.io/helm-abcd/my-nginx-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-05-05T09:46:32.115621+08:00"
