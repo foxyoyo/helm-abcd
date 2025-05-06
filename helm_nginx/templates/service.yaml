@@ -1,16 +1,21 @@
 {{- if .Values.service.enabled }}
+{{- range $name, $svc := .Values.service }}
+{{- if ne $name "enabled" }}   # 避開 enabled 本身
+---
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ .Release.Name }}-{{ .Chart.Name }}-svc
+  name: {{ $.Release.Name }}-{{ $.Chart.Name }}-svc
   labels:
-    {{- include "my-nginx.selectorLabels" . | nindent 4 }}
+    {{- include "my-nginx.selectorLabels" $ | nindent 4 }}
 spec:
-  type: {{ .Values.service.type }}
+  type: {{ $svc.type }}
   selector:
-    {{- include "my-nginx.selectorLabels" . | nindent 6 }} 
+    {{- include "my-nginx.selectorLabels" $ | nindent 6 }} 
   ports:
     - protocol: TCP
-      port: {{ .Values.service.port }}
-      targetPort: {{ .Values.containerPorts.http }}
-{{ end }}
+      port: {{ $svc.port }}
+      targetPort: {{ $svc.targetPort }}
+{{- end }}
+{{- end }}
+{{- end }}

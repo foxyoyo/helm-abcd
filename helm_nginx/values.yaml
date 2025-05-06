@@ -4,6 +4,10 @@ replicaCount: 3
 # Custom name for the NGINX deployment
 # customName: "fox-nginx"
 
+environment:
+  name: "dev"
+  replicaCount: 5
+
 ## Settings for NGINX image
 ##
 ## @param image.name Nginx image name to use
@@ -25,5 +29,11 @@ containerPorts:
 ## @param service.port The port where the service is receiving requests
 service:
   enabled: true
-  type: ClusterIP
-  port: 80
+  svc1:
+    type: ClusterIP
+    port: 80
+    targetPort: 80
+  svc2:
+    type: ClusterIP
+    port: 443
+    targetPort: 443
